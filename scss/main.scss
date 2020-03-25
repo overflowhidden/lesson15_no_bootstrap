@@ -1,0 +1,39 @@
+@import '_include-media';
+@mixin clearfix{
+	&:after{
+		content:'';
+		clear: both;
+		display: block;
+	}
+}
+@mixin border($color, $width, $radius: 0) {
+  border: {
+    color: $color;
+    width: $width;
+    radius: $radius;
+    style: solid;
+  }
+}
+
+*{box-sizing: border-box;}
+.main{
+	width: 960px;
+	background: #0f0 ;
+	margin: auto;
+	@include clearfix;
+	@include media('<900px'){
+		background: #99f;
+	}
+	ul{ 
+		padding: 0;
+		margin: 0;
+		background: #0f9;
+	}
+	.some-block{
+		@include border(blue, 5px, 15px);
+		width: 200px;
+		height: 200px;
+		background: yellowgreen;
+	} 
+}
+

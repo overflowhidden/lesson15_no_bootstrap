@@ -1,0 +1,1 @@
+header{float:left;background:red}*{box-sizing:border-box}.main{width:960px;background:#0f0;margin:auto}.main:after{content:'';clear:both;display:block}@media (max-width:899px){.main{background:#99f}}.main ul{padding:0;margin:0;background:#0f9}.main .some-block{border-color:#00f;border-width:5px;border-radius:15px;border-style:solid;width:200px;height:200px;background:#9acd32}
